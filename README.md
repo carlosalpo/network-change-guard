@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/carlosalpo/network-change-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/carlosalpo/network-change-guard/actions/workflows/ci.yml)
 
+![Two network snapshots connected through a change-inspection gate](docs/illustrations/network-change-guard-cover-v1.png)
+
 **Review network configuration changes before they become an outage.**
 
 A text diff shows that a line changed. A network reviewer needs to know whether
@@ -110,6 +112,10 @@ deliberately a summary, not a sanitized full-config diff or a general secret sca
 Review reports before sharing. See [privacy and integration](docs/integration.md).
 
 ## How it works
+
+![A configuration-review workbench comparing a baseline, candidate and evidence archive](docs/illustrations/network-change-guard-detail-v1.png)
+
+*Conceptual illustrations of configuration review. The CLI evaluates files offline; it does not deploy changes or execute rollback. See the [validation record](docs/validation.md) for tested behavior.*
 
 The reader separates global statements, parent/child blocks and multiline banners.
 The policy evaluator checks candidate invariants, while a separate comparison
