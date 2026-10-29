@@ -1,0 +1,9 @@
+$ PYTHONPATH=src PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/check_examples.py --output $NCG_EVIDENCE_DIR/example-matrix
+before: expected pass / exit 0; verified
+description-only: expected pass / exit 0; verified
+management-shutdown: expected block / exit 1; verified
+telnet-enabled: expected block / exit 1; verified
+required-route-removed: expected block / exit 1; verified
+ospf-cost-change: expected review / exit 3; verified
+unknown-feature: expected review / exit 3; verified
+[observed exit code: 0]

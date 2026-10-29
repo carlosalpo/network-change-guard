@@ -14,6 +14,11 @@ The tool runs offline, has no runtime dependencies and never connects to a devic
 It is a bounded pre-change check that can sit beside a pull request, a change
 ticket or an Ansible workflow.
 
+Browse the [visual test evidence](docs/screenshots/README.md) for actual CLI outcomes,
+generated reports, the test suite and the sanitized IOSv fixture replay.
+
+![Management shutdown detected before deployment](docs/screenshots/images/02-management-shutdown-block.png)
+
 ## A review decision with a precise meaning
 
 | Decision | Exit code | Meaning |

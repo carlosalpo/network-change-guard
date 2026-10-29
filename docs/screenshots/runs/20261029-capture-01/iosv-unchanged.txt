@@ -1,0 +1,3 @@
+$ PYTHONPATH=src PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m changeguard.cli review --before docs/evidence/iosv-15.9-20261029/before.cfg --candidate docs/evidence/iosv-15.9-20261029/before.cfg --policy docs/evidence/iosv-15.9-20261029/policy.json --output $NCG_EVIDENCE_DIR/iosv-unchanged
+Decision: pass; blockers=0; reviews=0; changed_scopes=0
+[observed exit code: 0]

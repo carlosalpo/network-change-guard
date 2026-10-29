@@ -1,0 +1,168 @@
+{
+  "project": "Network Change Guard",
+  "repository": "https://github.com/carlosalpo/network-change-guard",
+  "commit": "05b6386bb969725d0d262a9d27915b3c301aa21f",
+  "package_version": "0.1.0",
+  "release_status": "Package version; no release tag asserted",
+  "timezone": "America/Tegucigalpa",
+  "method": "Chrome screenshots of local HTML documents rendering fresh CLI transcripts and original generated Markdown reports. No image generation; no simulated application interface.",
+  "scope": "Offline review only. Synthetic examples and reduced sanitized IOSv fixture. No candidate applied. No deployment, failover, reachability or operational-health claims.",
+  "privacy": "No raw configuration is displayed or copied. Screenshots contain no IP addresses, device hostnames, credentials, emails or absolute workstation paths. Input identifiers are hashes. Commands use a portable external-output environment variable.",
+  "receipt": "runs/20261029-capture-01/receipt.json",
+  "images": [
+    {
+      "id": "01-description-only-pass",
+      "name": "Description-only change",
+      "case": "description-only",
+      "caption": "A description-only edit passes the bounded offline policy review (exit 0); the report records one cosmetic change and binds the result to input fingerprints.",
+      "proves": "A synthetic description-only candidate receives pass / exit 0, with no blockers or review findings.",
+      "selected": false,
+      "file": "images/01-description-only-pass.png",
+      "view": "views/01-description-only-pass.html",
+      "dimensions": {
+        "width": 1440,
+        "height": 1120,
+        "viewport": 1440
+      },
+      "sha256": "c150ce18d9860afc66fbdca47f287a8d5a3c0ed2c053c239dddd1b45c279cae7",
+      "executed_at": "2026-10-29T12:28:05.461542-06:00",
+      "captured_at": "2026-10-29T18:30:36.115Z",
+      "source_files": [
+        "runs/20261029-capture-01/description-only.txt",
+        "runs/20261029-capture-01/description-only/report.md",
+        "runs/20261029-capture-01/description-only/report.json"
+      ],
+      "commands": [
+        ".venv/bin/python -m changeguard.cli review --before examples/before.cfg --candidate examples/description-only.cfg --policy examples/policy.json --output $NCG_EVIDENCE_DIR/description-only"
+      ],
+      "source_urls": [
+        "https://github.com/carlosalpo/network-change-guard/tree/05b6386bb969725d0d262a9d27915b3c301aa21f",
+        "https://github.com/carlosalpo/network-change-guard/blob/05b6386bb969725d0d262a9d27915b3c301aa21f/examples/description-only.cfg"
+      ]
+    },
+    {
+      "id": "02-management-shutdown-block",
+      "name": "Management shutdown blocked",
+      "case": "management-shutdown",
+      "caption": "Network Change Guard blocks a synthetic management-interface shutdown with MGMT_SHUTDOWN (exit 1), identifying the protected interface before any deployment.",
+      "proves": "A synthetic shutdown of protected GigabitEthernet0/0 receives block / exit 1 and the MGMT_SHUTDOWN finding.",
+      "selected": true,
+      "file": "images/02-management-shutdown-block.png",
+      "view": "views/02-management-shutdown-block.html",
+      "dimensions": {
+        "width": 1440,
+        "height": 1166,
+        "viewport": 1440
+      },
+      "sha256": "35f40f37fe158b32949881b5efd076bd7ceabc01f4bd66b14cf6a58483a8ae16",
+      "executed_at": "2026-10-29T12:28:05.499502-06:00",
+      "captured_at": "2026-10-29T18:30:36.276Z",
+      "source_files": [
+        "runs/20261029-capture-01/management-shutdown.txt",
+        "runs/20261029-capture-01/management-shutdown/report.md",
+        "runs/20261029-capture-01/management-shutdown/report.json"
+      ],
+      "commands": [
+        ".venv/bin/python -m changeguard.cli review --before examples/before.cfg --candidate examples/management-shutdown.cfg --policy examples/policy.json --output $NCG_EVIDENCE_DIR/management-shutdown"
+      ],
+      "source_urls": [
+        "https://github.com/carlosalpo/network-change-guard/tree/05b6386bb969725d0d262a9d27915b3c301aa21f",
+        "https://github.com/carlosalpo/network-change-guard/blob/05b6386bb969725d0d262a9d27915b3c301aa21f/examples/management-shutdown.cfg"
+      ]
+    },
+    {
+      "id": "03-ospf-cost-review",
+      "name": "OSPF cost change requires review",
+      "case": "ospf-cost-change",
+      "caption": "An OSPF interface-cost change requires human review (exit 3), even when no modeled blocking invariant is violated.",
+      "proves": "A synthetic OSPF cost change receives review / exit 3 and CHANGE_REVIEW, rather than pass.",
+      "selected": true,
+      "file": "images/03-ospf-cost-review.png",
+      "view": "views/03-ospf-cost-review.html",
+      "dimensions": {
+        "width": 1440,
+        "height": 1120,
+        "viewport": 1440
+      },
+      "sha256": "10bf496f4d404e705ae9f7f6b195b0be1d2099e523ee7ad8306f7d543280a475",
+      "executed_at": "2026-10-29T12:28:05.540403-06:00",
+      "captured_at": "2026-10-29T18:30:36.366Z",
+      "source_files": [
+        "runs/20261029-capture-01/ospf-cost-change.txt",
+        "runs/20261029-capture-01/ospf-cost-change/report.md",
+        "runs/20261029-capture-01/ospf-cost-change/report.json"
+      ],
+      "commands": [
+        ".venv/bin/python -m changeguard.cli review --before examples/before.cfg --candidate examples/ospf-cost-change.cfg --policy examples/policy.json --output $NCG_EVIDENCE_DIR/ospf-cost-change"
+      ],
+      "source_urls": [
+        "https://github.com/carlosalpo/network-change-guard/tree/05b6386bb969725d0d262a9d27915b3c301aa21f",
+        "https://github.com/carlosalpo/network-change-guard/blob/05b6386bb969725d0d262a9d27915b3c301aa21f/examples/ospf-cost-change.cfg"
+      ]
+    },
+    {
+      "id": "04-tests-and-example-matrix",
+      "name": "Automated test and example results",
+      "caption": "The local Python 3.12.14 run passes all 91 tests and verifies the expected decision and exit code for all seven committed synthetic scenarios.",
+      "proves": "The full local test suite and seven-case end-to-end example matrix succeed for the recorded source commit.",
+      "selected": false,
+      "file": "images/04-tests-and-example-matrix.png",
+      "view": "views/04-tests-and-example-matrix.html",
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "sha256": "98ed58d177bc621d7bdecf7b0ae7e25a79129e4a3c01682fc37e8a4f51a8a229",
+      "executed_at": "2026-10-29T12:28:05.580423-06:00",
+      "captured_at": "2026-10-29T18:30:36.488Z",
+      "source_files": [
+        "runs/20261029-capture-01/tests.txt",
+        "runs/20261029-capture-01/example-matrix.txt",
+        "runs/20261029-capture-01/example-matrix/matrix.json"
+      ],
+      "commands": [
+        ".venv/bin/python -m pytest -q -p no:cacheprovider",
+        ".venv/bin/python scripts/check_examples.py --output $NCG_EVIDENCE_DIR/example-matrix"
+      ],
+      "source_urls": [
+        "https://github.com/carlosalpo/network-change-guard/tree/05b6386bb969725d0d262a9d27915b3c301aa21f",
+        "https://github.com/carlosalpo/network-change-guard/blob/05b6386bb969725d0d262a9d27915b3c301aa21f/scripts/check_examples.py"
+      ]
+    },
+    {
+      "id": "05-iosv-sanitized-fixture-replay",
+      "name": "Sanitized IOSv fixture replay",
+      "caption": "Offline replay of the reduced, sanitized IOSv 15.9(3)M6 fixture reproduces pass, block and review. The source capture was read-only on October 29, 2026; no candidate was applied to a router.",
+      "proves": "Three local CLI reviews reproduce the committed sanitized-fixture reports, including their findings, structural changes and input fingerprints. This is a replay, not a new device capture.",
+      "selected": false,
+      "file": "images/05-iosv-sanitized-fixture-replay.png",
+      "view": "views/05-iosv-sanitized-fixture-replay.html",
+      "dimensions": {
+        "width": 1440,
+        "height": 1250,
+        "viewport": 1440
+      },
+      "sha256": "2d588a75521d6656ec1a5fdc86dde41df077f16b77ae3cd858d4400b87cdb2a9",
+      "executed_at": "2026-10-29T12:28:06.171060-06:00",
+      "captured_at": "2026-10-29T18:30:36.619Z",
+      "source_files": [
+        "runs/20261029-capture-01/iosv-unchanged.txt",
+        "runs/20261029-capture-01/iosv-unchanged/report.json",
+        "runs/20261029-capture-01/iosv-management-shutdown.txt",
+        "runs/20261029-capture-01/iosv-management-shutdown/report.json",
+        "runs/20261029-capture-01/iosv-ospf-cost-change.txt",
+        "runs/20261029-capture-01/iosv-ospf-cost-change/report.json"
+      ],
+      "commands": [
+        ".venv/bin/python -m changeguard.cli review --before docs/evidence/iosv-15.9-20261029/before.cfg --candidate docs/evidence/iosv-15.9-20261029/before.cfg --policy docs/evidence/iosv-15.9-20261029/policy.json --output $NCG_EVIDENCE_DIR/iosv-unchanged",
+        ".venv/bin/python -m changeguard.cli review --before docs/evidence/iosv-15.9-20261029/before.cfg --candidate docs/evidence/iosv-15.9-20261029/management-shutdown.cfg --policy docs/evidence/iosv-15.9-20261029/policy.json --output $NCG_EVIDENCE_DIR/iosv-management-shutdown",
+        ".venv/bin/python -m changeguard.cli review --before docs/evidence/iosv-15.9-20261029/before.cfg --candidate docs/evidence/iosv-15.9-20261029/ospf-cost-change.cfg --policy docs/evidence/iosv-15.9-20261029/policy.json --output $NCG_EVIDENCE_DIR/iosv-ospf-cost-change"
+      ],
+      "source_urls": [
+        "https://github.com/carlosalpo/network-change-guard/tree/05b6386bb969725d0d262a9d27915b3c301aa21f",
+        "https://github.com/carlosalpo/network-change-guard/blob/05b6386bb969725d0d262a9d27915b3c301aa21f/docs/evidence/iosv-15.9-20261029/capture.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "block",
+  "before_sha256": "e87c9a16ffceda1becddabf3909583fe87b78ac09365e3324f0e6a3d26d67ab9",
+  "candidate_sha256": "fa2503da6599c10dd28266052a7ba93c164005e4e6a5f6cabc25fd33b471f0da",
+  "policy_sha256": "53d46f0eef2e5f63b55f6091c472ec2f5d8329dfa36639d56c026bb1c01c3943",
+  "scope": "Cisco IOS static snapshots; policy checks, not deployment approval",
+  "summary": {
+    "changed_scopes": 1,
+    "blockers": 1,
+    "reviews": 1
+  },
+  "changes": [
+    {
+      "scope": "interface GigabitEthernet0/0",
+      "kind": "modified",
+      "cosmetic": false,
+      "added": 1,
+      "removed": 0
+    }
+  ],
+  "findings": [
+    {
+      "code": "MGMT_SHUTDOWN",
+      "severity": "block",
+      "scope": "interface GigabitEthernet0/0",
+      "message": "Protected interface is shut down."
+    },
+    {
+      "code": "CHANGE_REVIEW",
+      "severity": "review",
+      "scope": "change set",
+      "message": "Non-description changes require review, including changes outside modeled rules."
+    }
+  ],
+  "tool_version": "0.1.0"
+}

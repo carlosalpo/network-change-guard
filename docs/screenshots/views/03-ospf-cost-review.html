@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>OSPF cost change requires review — evidence</title><style>*{box-sizing:border-box}html{background:#fff;color:#17212e}body{margin:0;font:20px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}main{padding:38px 48px 34px;max-width:1440px;margin:auto}.label{font-size:15px;letter-spacing:.11em;font-weight:700;color:#526477;text-transform:uppercase}.title{font-size:32px;line-height:1.15;margin:9px 0 14px;font-weight:750}.meta{font-size:16px;color:#465466;margin-bottom:22px;line-height:1.6}.meta code{font-size:15px}.transcript{background:#f2f5f7;border-left:4px solid #536e85;padding:15px 20px;white-space:pre-wrap;overflow-wrap:anywhere;font:17px/1.5 'SFMono-Regular',Menlo,monospace;margin:12px 0 22px}.report{border-top:1px solid #cbd4dd;padding-top:10px}.report h1{font-size:26px;margin:10px 0}.report h2{font-size:22px;margin:20px 0 10px}.report p{margin:10px 0}table{border-collapse:collapse;width:100%;font-size:18px;line-height:1.4}th,td{border:1px solid #cbd4dd;text-align:left;padding:10px 13px}th{background:#edf1f5;font-weight:650}code{font-family:'SFMono-Regular',Menlo,monospace;font-size:16px}.report p:has(code){font-size:16px;line-height:1.8}.report p:last-child{font-size:15px;color:#4b5867;margin-top:14px}h2{font-size:24px;margin:23px 0 9px}.note{font-size:18px;line-height:1.5}footer{margin-top:24px;padding-top:14px;border-top:1px solid #cbd4dd;color:#526477;font-size:14px}.small{font-size:15px}</style><body><main><div class="label">Network Change Guard · execution evidence</div><div class="title">OSPF cost change requires review</div><div class="meta">Executed 2026-10-29T12:28:05.540403-06:00 · America/Tegucigalpa · package v0.1.0<br>Source commit <code>05b6386bb969725d0d262a9d27915b3c301aa21f</code></div><div class="small">Recorded command and stdout · synthetic complete snapshots</div><pre class="transcript">$ PYTHONPATH=src PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m changeguard.cli review --before examples/before.cfg --candidate examples/ospf-cost-change.cfg --policy examples/policy.json --output $NCG_EVIDENCE_DIR/ospf-cost-change
+Decision: review; blockers=0; reviews=1; changed_scopes=1
+[observed exit code: 3]
+</pre><section class="report"><h1>Network Change Guard</h1>
+<p>Decision: <strong>review</strong></p>
+<p>This is a bounded policy review, not approval to deploy.</p>
+<table>
+<thead>
+<tr>
+<th>Severity</th>
+<th>Rule</th>
+<th>Scope</th>
+<th>Finding</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>review</td>
+<td>CHANGE_REVIEW</td>
+<td>change set</td>
+<td>Non-description changes require review, including changes outside modeled rules.</td>
+</tr>
+</tbody></table>
+<h2>Changes</h2>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>Kind</th>
+<th>Added</th>
+<th>Removed</th>
+<th>Description only</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>interface GigabitEthernet0/1</td>
+<td>modified</td>
+<td>1</td>
+<td>1</td>
+<td>no</td>
+</tr>
+</tbody></table>
+<h2>Input identity</h2>
+<p>Baseline SHA-256: <code>b720fa8facd2b515dd6579e30901bbb9cd45a9346cc33717594cf5977e09edf6</code><br>Candidate SHA-256: <code>97726db585944a93a6201000c6ae2dfe24a6a577b1ac6aab771af272c82af640</code><br>Canonical policy SHA-256: <code>d0014c7dfe3e36be3ce889d190bd02bc7ed8947d48d05d323b553e7e1a7fc903</code></p>
+<p>Raw commands, hostnames, addresses, credential values and input paths are omitted.<br>Interface names, process IDs, counts and fingerprints remain; review before sharing.<br>Counts are structural line counts, not executable configuration operations.</p>
+</section><footer>Documentary rendering of saved execution output — not a product interface.<br>Source: github.com/carlosalpo/network-change-guard · offline policy review; no deployment performed.</footer></main></body></html>

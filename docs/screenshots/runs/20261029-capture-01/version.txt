@@ -1,0 +1,3 @@
+$ PYTHONPATH=src PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m changeguard.cli --version
+Network Change Guard 0.1.0
+[observed exit code: 0]

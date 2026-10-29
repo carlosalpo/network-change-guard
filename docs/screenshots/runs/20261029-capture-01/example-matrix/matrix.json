@@ -1,0 +1,37 @@
+[
+  {
+    "case": "before",
+    "exit_code": 0,
+    "decision": "pass"
+  },
+  {
+    "case": "description-only",
+    "exit_code": 0,
+    "decision": "pass"
+  },
+  {
+    "case": "management-shutdown",
+    "exit_code": 1,
+    "decision": "block"
+  },
+  {
+    "case": "telnet-enabled",
+    "exit_code": 1,
+    "decision": "block"
+  },
+  {
+    "case": "required-route-removed",
+    "exit_code": 1,
+    "decision": "block"
+  },
+  {
+    "case": "ospf-cost-change",
+    "exit_code": 3,
+    "decision": "review"
+  },
+  {
+    "case": "unknown-feature",
+    "exit_code": 3,
+    "decision": "review"
+  }
+]

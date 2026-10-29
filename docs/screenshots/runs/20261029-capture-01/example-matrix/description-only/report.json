@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "before_sha256": "b720fa8facd2b515dd6579e30901bbb9cd45a9346cc33717594cf5977e09edf6",
+  "candidate_sha256": "02dab6e48c3d2655164e35ff0632fcdff3b1e60f4e89479d1c4a7d8a151e79f2",
+  "policy_sha256": "d0014c7dfe3e36be3ce889d190bd02bc7ed8947d48d05d323b553e7e1a7fc903",
+  "scope": "Cisco IOS static snapshots; policy checks, not deployment approval",
+  "summary": {
+    "changed_scopes": 1,
+    "blockers": 0,
+    "reviews": 0
+  },
+  "changes": [
+    {
+      "scope": "interface GigabitEthernet0/1",
+      "kind": "modified",
+      "cosmetic": true,
+      "added": 1,
+      "removed": 1
+    }
+  ],
+  "findings": [],
+  "tool_version": "0.1.0"
+}

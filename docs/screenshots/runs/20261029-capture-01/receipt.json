@@ -1,0 +1,213 @@
+{
+  "repository": "https://github.com/carlosalpo/network-change-guard",
+  "commit": "05b6386bb969725d0d262a9d27915b3c301aa21f",
+  "git_status_before": "",
+  "package_version": "0.1.0",
+  "release_status": "Package version; no release tag asserted",
+  "timezone": "America/Tegucigalpa",
+  "source_sha256": {
+    ".github/workflows/ci.yml": "05384dbdc70b5420847d6e0b121b163451c9627ab8359e809176ebeef709a337",
+    ".gitignore": "9cc5f83b94a5755121075c1d1a4cfc4c8313f9004247947fa4d9fd5f5453ecc2",
+    "LICENSE": "a305974127d07a1f9f85714281ba7ffaae5d0d5f207ea76ab6410dc47282392f",
+    "README.md": "d3289ac07995a19c6da9a0876b9e39892084bb38bb2f16b8d58314eddebd2906",
+    "SECURITY.md": "707031e6bfdf8aad8db977f9c32110a97462bdc7bf7fe5ceed45e0776810991c",
+    "docs/evidence/iosv-15.9-20261029/before.cfg": "e87c9a16ffceda1becddabf3909583fe87b78ac09365e3324f0e6a3d26d67ab9",
+    "docs/evidence/iosv-15.9-20261029/capture.json": "cc4fb33f932cbbce9b30da6845c5b072b165a6f1ebe4419a2a4a86818663a400",
+    "docs/evidence/iosv-15.9-20261029/management-shutdown.cfg": "fa2503da6599c10dd28266052a7ba93c164005e4e6a5f6cabc25fd33b471f0da",
+    "docs/evidence/iosv-15.9-20261029/management-shutdown/report.json": "8037335c5a65c94bd6d29ffb7ca77c752c4fd9af2afcf48c0544f5d961583ced",
+    "docs/evidence/iosv-15.9-20261029/management-shutdown/report.md": "e7b9369ee358cf29ac60352344ac852e262e4410f7d40654f1fc3ac9d01741f8",
+    "docs/evidence/iosv-15.9-20261029/ospf-cost-change.cfg": "abe7060a9e3b5bf70050ebcaf25d409b293ff64ed64cab23bd643b10459b19fd",
+    "docs/evidence/iosv-15.9-20261029/ospf-cost-change/report.json": "96d120fa99b83e6a769162c38627f35e3380e0b789a738cbc3eb3ea2a5286b17",
+    "docs/evidence/iosv-15.9-20261029/ospf-cost-change/report.md": "d61497402e38962bbda5db378612d2578e779080f5ba7bee461a893f79c21230",
+    "docs/evidence/iosv-15.9-20261029/policy.json": "a4b36789edcaab5109403692eac5b3bbfe48601526eea31f74669e5213862fb4",
+    "docs/evidence/iosv-15.9-20261029/tested-source-sha256.json": "0defa70933b51461df578f8f20419931cc218dc6f6347682b0e9f5f758518c44",
+    "docs/evidence/iosv-15.9-20261029/unchanged/report.json": "193638c74d94ab88b9a30e2e32c57c4e402192ddb09b69a98df8f99013cc7786",
+    "docs/evidence/iosv-15.9-20261029/unchanged/report.md": "4a4bafdf67199b0c20d5ea67ae1f25be32ab180cb4643db486dd26c42ada74d2",
+    "docs/integration.md": "b76f3488d622935a55cc7cb7bfb2637a6326d8c0286558dc3e8f5731e7e06435",
+    "docs/rules.md": "1f3ae13c66084ea0ab134241065c4f0d06cf0dd65536239e3c289b1697cd58dd",
+    "docs/validation.md": "913a53f61ece37e8ce881291d0fc59b05f1f71c4ddc624e175c8ceb09c628948",
+    "examples/README.md": "79976f01f0d1535668173c7e10fd01d5db813b0e9d6c199099f97f349d8ffc25",
+    "examples/before.cfg": "b720fa8facd2b515dd6579e30901bbb9cd45a9346cc33717594cf5977e09edf6",
+    "examples/description-only.cfg": "02dab6e48c3d2655164e35ff0632fcdff3b1e60f4e89479d1c4a7d8a151e79f2",
+    "examples/management-shutdown.cfg": "6a3ec6d586abcabccb058e56ba2bfeed321877c060fa9e8987acf910b8e08452",
+    "examples/ospf-cost-change.cfg": "97726db585944a93a6201000c6ae2dfe24a6a577b1ac6aab771af272c82af640",
+    "examples/policy.json": "312a11ad8bba8cb5f3b0baadf1d26d314188e3ef32c06e21323ea203777d7aaf",
+    "examples/required-route-removed.cfg": "3980b3435a761983eb9925ce00073cd3cbe0cdd137df9d2981173a871c3a182f",
+    "examples/telnet-enabled.cfg": "a454ad23e8744453def12945cd6d07e9a76256ba5ffaa439b4b022f1b1280a3f",
+    "examples/unknown-feature.cfg": "bc26aa9c2393fc4e179325ca771573542934b11e2c50bdbe68650acb9fb79948",
+    "pyproject.toml": "f9dfc0812ef5dcbb343d7c6e50436b2b2308240dc1a91418586be1abd3e875c5",
+    "scripts/check_examples.py": "67620948f6a10987a8b8bd4da7605c8ab58e3d311e7bd426ce51f2b3cb312f4c",
+    "src/changeguard/__init__.py": "2a07342a0d6b1d0480818e57a4ffed868f164a6e2e1f0fc3bc259efe85d7da75",
+    "src/changeguard/cli.py": "1e84e1373469a39017d2d2ac462f7db211fb84b48f68a3d282b68f44e9190385",
+    "src/changeguard/engine.py": "81e689d36bf4a906da20b8c772226ba2c9823e73c54d5093221ac32a718c3706",
+    "src/changeguard/model.py": "127a4262f95865e0d642704d59190ac05b70bed426167485c8e51fe4fee9d8f0",
+    "tests/conftest.py": "2a504002a22ad59feba2593b09181d3ca1a756552d53fc48a4ba0d110b930d9f",
+    "tests/test_cli.py": "836f5525271af7c76b96f569c95cf6cd95592d98b7bd37ee32583605112f6178",
+    "tests/test_device_fixture.py": "436a2f69b901af33401d369f9744bc28a0b37c154336a43e7e434cd2a86a5ab2",
+    "tests/test_engine.py": "d4bc0c86a21b4549f9859e79c40fe3254bab86cf74efe5b91389368e285d13f5",
+    "tests/test_model.py": "423d55d0c0f3cb835c4efeada51b7c1ab9a43f1d734d11d3ff7648626eb78764"
+  },
+  "runs": [
+    {
+      "name": "version",
+      "started_at": "2026-10-29T12:28:05.422179-06:00",
+      "finished_at": "2026-10-29T12:28:05.461506-06:00",
+      "command": ".venv/bin/python -m changeguard.cli --version",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "transcript": "version.txt"
+    },
+    {
+      "name": "description-only",
+      "started_at": "2026-10-29T12:28:05.461542-06:00",
+      "finished_at": "2026-10-29T12:28:05.499472-06:00",
+      "command": ".venv/bin/python -m changeguard.cli review --before examples/before.cfg --candidate examples/description-only.cfg --policy examples/policy.json --output $NCG_EVIDENCE_DIR/description-only",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "transcript": "description-only.txt"
+    },
+    {
+      "name": "management-shutdown",
+      "started_at": "2026-10-29T12:28:05.499502-06:00",
+      "finished_at": "2026-10-29T12:28:05.540374-06:00",
+      "command": ".venv/bin/python -m changeguard.cli review --before examples/before.cfg --candidate examples/management-shutdown.cfg --policy examples/policy.json --output $NCG_EVIDENCE_DIR/management-shutdown",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "transcript": "management-shutdown.txt"
+    },
+    {
+      "name": "ospf-cost-change",
+      "started_at": "2026-10-29T12:28:05.540403-06:00",
+      "finished_at": "2026-10-29T12:28:05.580409-06:00",
+      "command": ".venv/bin/python -m changeguard.cli review --before examples/before.cfg --candidate examples/ospf-cost-change.cfg --policy examples/policy.json --output $NCG_EVIDENCE_DIR/ospf-cost-change",
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "transcript": "ospf-cost-change.txt"
+    },
+    {
+      "name": "tests",
+      "started_at": "2026-10-29T12:28:05.580423-06:00",
+      "finished_at": "2026-10-29T12:28:05.790686-06:00",
+      "command": ".venv/bin/python -m pytest -q -p no:cacheprovider",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "transcript": "tests.txt"
+    },
+    {
+      "name": "example-matrix",
+      "started_at": "2026-10-29T12:28:05.790724-06:00",
+      "finished_at": "2026-10-29T12:28:06.171035-06:00",
+      "command": ".venv/bin/python scripts/check_examples.py --output $NCG_EVIDENCE_DIR/example-matrix",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "transcript": "example-matrix.txt"
+    },
+    {
+      "name": "iosv-unchanged",
+      "started_at": "2026-10-29T12:28:06.171060-06:00",
+      "finished_at": "2026-10-29T12:28:06.215806-06:00",
+      "command": ".venv/bin/python -m changeguard.cli review --before docs/evidence/iosv-15.9-20261029/before.cfg --candidate docs/evidence/iosv-15.9-20261029/before.cfg --policy docs/evidence/iosv-15.9-20261029/policy.json --output $NCG_EVIDENCE_DIR/iosv-unchanged",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "transcript": "iosv-unchanged.txt",
+      "matches_committed_fixture_report": true
+    },
+    {
+      "name": "iosv-management-shutdown",
+      "started_at": "2026-10-29T12:28:06.216164-06:00",
+      "finished_at": "2026-10-29T12:28:06.260017-06:00",
+      "command": ".venv/bin/python -m changeguard.cli review --before docs/evidence/iosv-15.9-20261029/before.cfg --candidate docs/evidence/iosv-15.9-20261029/management-shutdown.cfg --policy docs/evidence/iosv-15.9-20261029/policy.json --output $NCG_EVIDENCE_DIR/iosv-management-shutdown",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "transcript": "iosv-management-shutdown.txt",
+      "matches_committed_fixture_report": true
+    },
+    {
+      "name": "iosv-ospf-cost-change",
+      "started_at": "2026-10-29T12:28:06.260316-06:00",
+      "finished_at": "2026-10-29T12:28:06.303632-06:00",
+      "command": ".venv/bin/python -m changeguard.cli review --before docs/evidence/iosv-15.9-20261029/before.cfg --candidate docs/evidence/iosv-15.9-20261029/ospf-cost-change.cfg --policy docs/evidence/iosv-15.9-20261029/policy.json --output $NCG_EVIDENCE_DIR/iosv-ospf-cost-change",
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "transcript": "iosv-ospf-cost-change.txt",
+      "matches_committed_fixture_report": true
+    }
+  ],
+  "historical_fixture": {
+    "collected_at": "2026-10-29T18:13:56.018886+00:00",
+    "ios": "15.9(3)M6",
+    "method": "Read-only console show running-config from dedicated synthetic lab; no candidate applied",
+    "original_in_place_reviews": [
+      {
+        "case": "unchanged",
+        "decision": "pass",
+        "summary": {
+          "changed_scopes": 0,
+          "blockers": 0,
+          "reviews": 0
+        }
+      },
+      {
+        "case": "management-shutdown",
+        "decision": "block",
+        "summary": {
+          "changed_scopes": 1,
+          "blockers": 1,
+          "reviews": 1
+        }
+      },
+      {
+        "case": "ospf-cost-change",
+        "decision": "review",
+        "summary": {
+          "changed_scopes": 1,
+          "blockers": 0,
+          "reviews": 1
+        }
+      }
+    ],
+    "sanitization": "Export is a reduced allowlisted fixture: credential replaced with nonfunctional placeholder; hostname/descriptions replaced; all other global commands, banners, certificates and unrelated blocks omitted. Only synthetic management/data addresses retained. Published reports were regenerated from this fixture, not the untouched original.",
+    "candidate_application": "None; mutations evaluated only in memory/files.",
+    "router_stopped_after_capture": true
+  },
+  "git_status_after": "",
+  "tracked_source_unchanged": true,
+  "output_sha256": {
+    "ospf-cost-change.txt": "45f8923373dbc36c25efa2d0dc3c30fe9dbbc411ec08a3f342bf6dfd3f909680",
+    "tests.txt": "508630c3d59d68f8227ea6f7dd0bc10dfeeaf59855a1d2f74c9f5be03c3026d3",
+    "iosv-ospf-cost-change.txt": "0a7e936f1b2f114b83a8f6458a89cecd4f9a9091a161f0736e638c383bdff2e4",
+    "iosv-unchanged.txt": "f646894adc914b0f1371c2bb5abac47c5354535c88c98876eed47bbf47b651da",
+    "description-only.txt": "2018439848e408c232e12269a7d101156ee40da1ab3974f3339c2d949ee652ad",
+    "iosv-management-shutdown.txt": "be056bb849626fdfbacfcd99193a5f4e880718c5b6678d9ca0afe5fa8212ae09",
+    "version.txt": "73ec6b453a67c5ba3f4f2a812b9e1dc7da2e6e227fbfa2a744fbefd7bc8a2011",
+    "example-matrix.txt": "eb175c281c7e7345a8a54fe098a03cc370647f8ec777a381e9e7cde8928d4441",
+    "management-shutdown.txt": "df03fc6ec7cba5eaa74ca1393d11f1af7c8bad2d7d079ba0a825d5b5cc7f9898",
+    "ospf-cost-change/report.json": "efa303342986c76ac8192b14e3d353effe986486c30b4436446964962af6e563",
+    "ospf-cost-change/report.md": "61af06bb9bcccf47f669a1687e8a4053f038e181d17b776e2765e6ba1a0adce9",
+    "iosv-ospf-cost-change/report.json": "96d120fa99b83e6a769162c38627f35e3380e0b789a738cbc3eb3ea2a5286b17",
+    "iosv-ospf-cost-change/report.md": "d61497402e38962bbda5db378612d2578e779080f5ba7bee461a893f79c21230",
+    "iosv-management-shutdown/report.json": "8037335c5a65c94bd6d29ffb7ca77c752c4fd9af2afcf48c0544f5d961583ced",
+    "iosv-management-shutdown/report.md": "e7b9369ee358cf29ac60352344ac852e262e4410f7d40654f1fc3ac9d01741f8",
+    "example-matrix/matrix.json": "b7df574a69af179043759a8d65d42cc847a9357b52061ef486c4e9d30b837c69",
+    "description-only/report.json": "8a99f69e7e36fdf94142380073eff9c3c0d6a0b3e5ada153c69cbb5dad09e128",
+    "description-only/report.md": "cbb6e0654ccf688d3d1e5c8645f9459f08a28505df9cf3a67a33164f5ce8f027",
+    "management-shutdown/report.json": "0a18197186d0d609c2e9e194ff8b9b9554345c5fa021991a1314ebca8f38513b",
+    "management-shutdown/report.md": "e6f995c9422f1cf8b727ffb5e86313b9946b8374270df8f96a05ba6945daac76",
+    "iosv-unchanged/report.json": "193638c74d94ab88b9a30e2e32c57c4e402192ddb09b69a98df8f99013cc7786",
+    "iosv-unchanged/report.md": "4a4bafdf67199b0c20d5ea67ae1f25be32ab180cb4643db486dd26c42ada74d2",
+    "example-matrix/ospf-cost-change/report.json": "efa303342986c76ac8192b14e3d353effe986486c30b4436446964962af6e563",
+    "example-matrix/ospf-cost-change/report.md": "61af06bb9bcccf47f669a1687e8a4053f038e181d17b776e2765e6ba1a0adce9",
+    "example-matrix/telnet-enabled/report.json": "ebd753828e4b292572a1fbd6dd5e1cf397226b55fb8ced2d8c68fea0576a00fa",
+    "example-matrix/telnet-enabled/report.md": "6ede04a8d4992569e0857f05d68ca159cae588493058ea3687cc53e64dd8c065",
+    "example-matrix/before/report.json": "2133d5024d56f691fe0ca2b9d2675d88593a89d59a5d95a037ab0a77a704e279",
+    "example-matrix/before/report.md": "f60631af5041c8e30a8736c7fc60c299d71716911d24e64683b9cd4635e08ab9",
+    "example-matrix/description-only/report.json": "8a99f69e7e36fdf94142380073eff9c3c0d6a0b3e5ada153c69cbb5dad09e128",
+    "example-matrix/description-only/report.md": "cbb6e0654ccf688d3d1e5c8645f9459f08a28505df9cf3a67a33164f5ce8f027",
+    "example-matrix/unknown-feature/report.json": "e000788d80507db297a198576f557fbca4eaeb163a797dc291ddee21390dc02d",
+    "example-matrix/unknown-feature/report.md": "a0a0b89338c157e9980c21a1f8cfb430d0cd39f322c3f54bb3200f661dd3bc03",
+    "example-matrix/management-shutdown/report.json": "0a18197186d0d609c2e9e194ff8b9b9554345c5fa021991a1314ebca8f38513b",
+    "example-matrix/management-shutdown/report.md": "e6f995c9422f1cf8b727ffb5e86313b9946b8374270df8f96a05ba6945daac76",
+    "example-matrix/required-route-removed/report.json": "ab2d54be9127f9fa0b1ab0615c15e02c4f87e76c9373d861c25eba69e914f58f",
+    "example-matrix/required-route-removed/report.md": "76adbfd0771a8dff1900a481b2ff11123c632f4f443b3994b76f1a0ed17038a4"
+  }
+}
