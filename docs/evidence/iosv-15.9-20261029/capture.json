@@ -1,0 +1,37 @@
+{
+  "collected_at": "2026-10-29T18:13:56.018886+00:00",
+  "ios": "15.9(3)M6",
+  "method": "Read-only console show running-config from dedicated synthetic lab; no candidate applied",
+  "original_in_place_reviews": [
+    {
+      "case": "unchanged",
+      "decision": "pass",
+      "summary": {
+        "changed_scopes": 0,
+        "blockers": 0,
+        "reviews": 0
+      }
+    },
+    {
+      "case": "management-shutdown",
+      "decision": "block",
+      "summary": {
+        "changed_scopes": 1,
+        "blockers": 1,
+        "reviews": 1
+      }
+    },
+    {
+      "case": "ospf-cost-change",
+      "decision": "review",
+      "summary": {
+        "changed_scopes": 1,
+        "blockers": 0,
+        "reviews": 1
+      }
+    }
+  ],
+  "sanitization": "Export is a reduced allowlisted fixture: credential replaced with nonfunctional placeholder; hostname/descriptions replaced; all other global commands, banners, certificates and unrelated blocks omitted. Only synthetic management/data addresses retained. Published reports were regenerated from this fixture, not the untouched original.",
+  "candidate_application": "None; mutations evaluated only in memory/files.",
+  "router_stopped_after_capture": true
+}

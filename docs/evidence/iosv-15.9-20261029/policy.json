@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protected_interfaces": [
+    "GigabitEthernet0/0"
+  ],
+  "required_ospf_processes": [
+    "1"
+  ],
+  "required_routes": [],
+  "required_vty_lines": [
+    0,
+    4
+  ],
+  "max_changed_scopes": 4
+}
